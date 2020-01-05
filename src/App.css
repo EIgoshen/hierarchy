@@ -1,0 +1,106 @@
+.App {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    min-height: 200px;
+    border: 1px solid #000000;
+    padding: 25px 25px;
+    margin-top: 2px;
+}
+
+.Box {
+    border: 1px solid red;
+    height: 100px;
+    width: 100px;
+    margin-right: 5px;
+}
+
+.btn-add {
+    position: relative;
+    width: 300px;
+    height: 150px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-btn {
+    left: 185px;
+}
+
+button {
+    outline: none;
+}
+
+.box-btn {
+    margin-right: 5px;
+}
+
+.box-btn , .cont-btn{
+    width: 180px;
+    height: 90px;
+    border-radius: 15px;
+    border: 1px solid #000000;
+    z-index: 1;
+    background-color: #ffffff;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    outline: none;
+}
+
+.btn-add:hover .box-btn, .btn-add:hover .cont-btn{
+    display: flex;
+}
+
+.buttons-wrapper {
+    position: absolute;
+    top: -32%;
+    display: flex;
+}
+
+.Container > .Container {
+    margin: 15px;
+}
+
+.create-json-container, .build-json-container {
+    display: flex;
+    margin-top: 25px;
+}
+
+.create-json {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-left: 15px;
+    border: 1px solid #000000;
+    width: 130px;
+}
+
+textarea {
+    min-width: 350px;
+    height: 60px;
+    border: 1px solid #000000;
+}
+
+.json-text {
+    min-width: 350px;
+    height: 60px;
+    border: 1px solid #000000;
+}
+
